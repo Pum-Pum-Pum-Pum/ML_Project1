@@ -11,7 +11,9 @@ docker images
 '''
 
 to run docker image, p is port number while running pass 5000 as port. Image ID get from docket images command 
->docker run -p <port>:<port> -e PORT=<port> <IMAGE ID from docker images>
+
+
+docker run -p <port>:<port> -e PORT=<port> <IMAGE ID from docker images>
 '''
 docker run -p 5000:5000 -e PORT=5000 d1ca34f8ff9d
 '''
