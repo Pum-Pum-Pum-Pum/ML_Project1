@@ -25,3 +25,5 @@ to stop image, get container id using docker ps
 '''
 docker stop <Container_ID>
 '''
+
+This needs to be cleaned up later.
