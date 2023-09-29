@@ -22,6 +22,6 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=find_packages(),#PACKAGES,
+    packages=find_packages(), #PACKAGES,
     install_requires=get_requirements_list()
 )
