@@ -1,8 +1,10 @@
 from flask import Flask
+from housing.logger import logging
 app=Flask(__name__)
-@app.route("/",methods=['GET','POST'])
 
+@app.route("/",methods=['GET','POST'])
 def index():
+    logging.info("We are testing logging module")
     return "ML project initiating..."
 
 if __name__=="__main__":
