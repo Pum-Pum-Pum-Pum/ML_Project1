@@ -10,7 +10,7 @@ class HousingException(Exception):
     @staticmethod
     def get_detailed_Error_message(error_message:Exception, error_detail:sys)->str:
         _,_,exec_tb     = error_detail.exc_info() #_ _ is used as exc_info returns 3 values, first two is not required.
-        line_number     = exec_tb.tb_frame.f_lineno # pre-defined line number
+        line_number     = exec_tb.tb_frame.f_lineno 
         file_name       = exec_tb.tb_frame.f_code.co_filename
         error_message   = f"Error occured in file: [{file_name}] at line number : [{line_number}] error message: [{error_message}]"
         return error_message
