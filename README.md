@@ -27,3 +27,9 @@ docker stop <Container_ID>
 '''
 
 This needs to be cleaned up later.
+
+Install ipykernel
+
+'''
+pip install ipykernel
+'''
