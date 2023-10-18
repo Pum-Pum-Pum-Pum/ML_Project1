@@ -1,4 +1,9 @@
 from housing.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransfomationConfig, ModelTrainerConfig, ModelEvaluationConfig, ModelPusherConfig, TrainingPipelineConfig
+from housing.util.util import read_yaml_file
+import os
+
+ROOT_DIR = os.getcwd()
+
 
 class Configuration:
     def __init__(self)->None:
