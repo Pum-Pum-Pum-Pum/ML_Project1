@@ -1,12 +1,15 @@
 from housing.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransfomationConfig, ModelTrainerConfig, ModelEvaluationConfig, ModelPusherConfig, TrainingPipelineConfig
 from housing.util.util import read_yaml_file
 import os
+from housing.constant import *
+
+
 
 ROOT_DIR = os.getcwd()
 
 
 class Configuration:
-    def __init__(self)->None:
+    def __init__(self, config_file_path = CONFIG_FILE_PATH)->None:
         pass
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         pass
