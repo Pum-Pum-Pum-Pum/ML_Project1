@@ -6,9 +6,7 @@ from housing.exception import HousingException
 from housing.logger import logging
 
 
-
 ROOT_DIR = os.getcwd()
-
 
 class Configuration:
     def __init__(self, 
