@@ -5,4 +5,5 @@ pandas
 numpy
 ipykernel
 PyYAML
+six
 -e .

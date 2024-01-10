@@ -50,17 +50,15 @@ class Configuration:
             
         except Exception as e:
             raise HousingException(e,sys) from e
-
-        
+    def get_data_transformation_config(self) -> DataTransfomationConfig:
+        pass  
     def get_data_validation_config(self) -> DataValidationConfig:
         pass
-    def get_data_transformation_config(self) -> DataTransfomationConfig:
-        pass
-    def get_model_trainer_config(self) -> ModelTrainerConfig:
-        pass
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
-        pass
+        pass    
     def get_model_pusher_config(self) -> ModelPusherConfig:
+        pass    
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
         pass
     def get_training_pipeline_config(self) -> TrainingPipelineConfig:
         try:
